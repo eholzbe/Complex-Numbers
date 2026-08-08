@@ -7569,7 +7569,55 @@ $$ z = x + iy $$<p>The defition of $i$ is not unique because every complex numbe
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Let's see how to work with this in Python. A complex number can be obtained from its real and imaginary parts, here named $x$ and $y$.</p>
+<p>Let's see how to work with this in Python. A complex number can be obtained from its real and imaginary parts.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0028ab2d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mf">0.5</span><span class="n">j</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[91]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(1+0.5j)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c02a2240">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>What we just used in this Jupyter file, is a code cell. In a code cell we use the Python programming language, entering commands, here only one.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ecbb2047">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>You can also assign the values to names that we want to assecc later, here $x$, $y$ and $z$.</p>
 </div>
 </div>
 </div>
@@ -7595,7 +7643,7 @@ $$ z = x + iy $$<p>The defition of $i$ is not unique because every complex numbe
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>What we just used in this Jupyter file, is a code cell. In a code cell we use the Python programming language, entering commands. There are three commands in these two lines. First the variable $x$ is set to 1. Then the variable $y$ is set 0.5. Commands in a single line are separated by semicolon. Like other programming languages Python uses a decimal point, not a decimal comma. In the second line the variable $z$ is assigned to the complex number $1+i/2$. In Python code  1j is the imaginary unit $i = \sqrt{-1}$. The asterisk * denotes multiplication. Lets check, using the print command:</p>
+<p>There are three commands in these two lines. First the variable $x$ is set to 1. Then the variable $y$ is set 0.5. Commands in a single line are separated by semicolon. Like other programming languages Python uses a decimal point, not a decimal comma. In the second line the variable $z$ is assigned to the complex number $1+i/2$. In Python code  1j is the imaginary unit $i = \sqrt{-1}$. The asterisk * denotes multiplication. Lets check, using the print command:</p>
 </div>
 </div>
 </div>
@@ -7727,7 +7775,7 @@ $$ z = x + iy $$<p>The defition of $i$ is not unique because every complex numbe
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3b146230">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21167548">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7738,7 +7786,90 @@ $$ z_1 \pm z_2 = (x_1 + i y_1) \pm (x_2 + iy_2) = (x_1 \pm x_2) + i(y_1 \pm y_2)
 \begin{align}
 z_1 \cdot z_2 &amp; = (x_1 + i y_1) \cdot (x_2 + iy_2) = x_1 x_2 + i^2 y_1 y_2 + i x_1 y_2 + i x_2 y_1 \\
 &amp; = (x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1).
-\end{align}<p>Here an example in Python:</p>
+\end{align}
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a52f48a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Here the list of how to perform the basic operations in Python:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e8b39633">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>plus</td>
+<td>addition</td>
+</tr>
+<tr>
+<td>-</td>
+<td>minus</td>
+<td>subtraction</td>
+</tr>
+<tr>
+<td>*</td>
+<td>asterisk</td>
+<td>multiplication</td>
+</tr>
+<tr>
+<td>/</td>
+<td>slash</td>
+<td>division</td>
+</tr>
+<tr>
+<td>**</td>
+<td>double asterisk</td>
+<td>power</td>
+</tr>
+<tr>
+<td>//</td>
+<td>double slash</td>
+<td>truncation</td>
+</tr>
+<tr>
+<td>%</td>
+<td>modulus</td>
+<td>modulus</td>
+</tr>
+<tr>
+<td>()</td>
+<td>brackets</td>
+<td>specify evaluation order</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3b146230">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Here a simple example operation in Python:</p>
 </div>
 </div>
 </div>
@@ -7801,8 +7932,7 @@ $$ \text{Re}(z) = \frac{1}{2} (z + z^*), \quad \text{Im}(z) = \frac{-i}{2} (z - 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="mf">0.5</span>
-<span class="n">z</span><span class="o">.</span><span class="n">conjugate</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">z</span><span class="o">.</span><span class="n">conjugate</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8510,17 +8640,6 @@ Also the hyperbolic and inverse functions can be accessed easily! Here example e
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8614ea4">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The double equality == is a comparison. The answer from Python of such comparison is either 'True' or 'False'.</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=db082231">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8808,7 +8927,7 @@ $$ \sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
 \begin{align}
 z_1 \cdot z_2 &amp; = r_1(\cos \varphi_1 + i \sin \varphi_1) \cdot r_2(\cos \varphi_2 + i \sin \varphi_2) \\
 &amp; = r_1 r_2 (\cos (\varphi_1 + \varphi_2) + i \sin(\varphi_1 + \varphi_2))
-\end{align}<p>Thus multiplication of two complex numbers geometzrically is the result of a rotation and an dilation, a dilative rotation. This is illustrated in the figure below:</p>
+\end{align}<p>Thus multiplication of two complex numbers geometzrically is the result of a rotation and an dilation, a dilative rotation. This is illustrated in the figure below (forget for the time being the expression with $e$):</p>
 </div>
 </div>
 </div>
